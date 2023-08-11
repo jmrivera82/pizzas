@@ -1,6 +1,9 @@
-# PROYECTO INFORMATICA404
+# PROYECTO PIZZAS CATA
 
-## **Página web orientada a presentación de servicios para la reparación, instalación, configuración y mantenimiento de equipos y sistemas informáticos.
+#COMISION: 42985
+
+## **Página de presentación pizzería Cata, presentación de sus productos y preparaciones.
+### 
 ### 
 ### Estamos Ubicados en Pucón, en el centro del Sur de Chile.
 
