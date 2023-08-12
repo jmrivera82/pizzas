@@ -300,6 +300,14 @@ footer {
 }
 
 /*pagina promociones*/
+section h4 {
+  font-size: 25px;
+  color: crimson;
+  text-align: center;
+  padding-top: 0px;
+  padding: 20px;
+}
+
 .ubicacion-box-promociones h2 {
   text-align: center;
 }
@@ -363,6 +371,73 @@ footer {
   padding-top: 10px;
 }
 
+/*pagina de pruebas*/
+section h4 {
+  font-size: 25px;
+  color: crimson;
+  text-align: center;
+  padding-top: 0px;
+  padding: 20px;
+}
+
+.contenedorp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.contenedorp .cardp {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+.contenedorp .cardp .card-promo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.contenedorp .cardp .card-promo img {
+  display: block;
+  width: 100%;
+}
+.contenedorp .cardp .card-cuerpo {
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  padding: 20px 15px;
+  text-align: justify;
+  border: 1px solid #ccc;
+}
+.contenedorp .cardp .card-cuerpo .card-titulo {
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.contenedorp .cardp .card-cuerpo .card-info {
+  font-size: 22px;
+  color: grey;
+  text-align: center;
+  padding: 10px;
+}
+.contenedorp .cardp .card-cuerpo .card-precio {
+  font-size: 40px;
+  color: red;
+  text-align: center;
+  padding: 10px;
+}
+.contenedorp .cardp .card-cuerpo .btn-solicitar {
+  background-color: lightgreen;
+  color: white;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
 /*media queries*/
 @media (max-width: 1024px) {
   .row {
@@ -372,6 +447,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+  .contenedorp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -394,6 +474,20 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .contenidop {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .contenidop .card-promo {
+    height: 200px;
+    object-position: 50% 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .contenidop .card-promo .card-info {
+    flex-grow: 1;
   }
 }
 @media screen and (max-width: 350px) {
