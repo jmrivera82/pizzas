@@ -487,17 +487,14 @@ section {
 
 } 
 
-/*pagina de pruebas*/
-
-
-
+/*pagina de promos*/
 
 section {
 
     h4{
           @include titulopag;
     }
-}
+        }
 
 
 .contenedorp{
@@ -506,27 +503,21 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
    
-
     .cardp{
         margin:0;
         display: flex;
         flex-direction: column;
         border: 1px solid #ccc;
-         
 
         .card-promo{
             
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            
-    
-
-
+        
             img{
                 display: block;
                 width: 100%;
-
             }
              
         } 
@@ -586,7 +577,7 @@ section {
         }
     }
 
-    @media(max-width: 768px) {
+@media(max-width: 768px) {
   
         .footer{
             display: flex;
@@ -599,6 +590,17 @@ section {
             align-items:center;
             text-align: center;
           }
+
+          .contenedorp{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+
+            .card-promo{
+                flex-direction: column;
+
+            }
+        }  
       
       }
       
@@ -630,8 +632,6 @@ section {
         
         }
       
-      
-
 
     @media screen and (max-width: 350px){
  
