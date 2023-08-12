@@ -170,7 +170,7 @@ button {
   padding: 15px 25px;
   transition: 0.3s all esae;
 }
-button button:hover {
+button:hover {
   background-color: #da2a0b;
   border: 1px;
   border-radius: 10px;
