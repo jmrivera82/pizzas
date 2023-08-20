@@ -28,23 +28,23 @@
             </nav>
             <a href="../index.html" class="btn"><button>Inicio</button></a>
         </header>  
-     
-
 <main>
 
-    <div class="container-form">
-        <div class="info">
-            <h2>Envíanos tu solicitud</h2>
-            <p>Ingresa tus datos y te contactaremos lo antes posible</p>
+    <form>
+        <h2 class="tituloform"> Contáctanos </h2>
+        <div class="form_contenedor">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" class="form_texto" placeholder="Ingresa tu nombre:">
+            <label for="email">Email</label>
+            <input type="email" class="form_texto" placeholder="Ingresa tu email:">
+            <label for="telefono">Teléfono</label>
+            <input type="telefono" class="form_texto" placeholder="Ingresa tu teléfono:">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="form_texto" name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Escriba su mensaje"></textarea>
+            <input class="btnformcontacto" type="submit" value="enviar"> 
+        
         </div>
-        <form action="#" autocomplete="off">
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
-            <input type="text" name="email" placeholder="Ingresa tu email" class="campo">
-            <input type="text" name="telefono" placeholder="Ingresa tu teléfono" class="campo">
-            <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
-            <input type="submit"  name ="enviar" value="enviar mensaje" class="btn-enviar">
-        </form>
-    </div>
+    </form>
 </main>
 
 <footer>

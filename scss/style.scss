@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
 
 @mixin color1{
-    font-size: 1rem;
+    font-size: 3rem;
     color: #da2a0b;
 }
 
 @mixin titulopag{
-    font-size: 25px;
+    font-size: 55px;
     color: crimson;
     text-align: center;
     padding-top:0px;
@@ -35,19 +35,34 @@
     padding: 10px;
 }
 
+@mixin tituloform{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    padding: 10px;
+}
+
+@mixin preciopizza{
+    color: crimson;
+    font-weight:1000;
+    font-size: 2rem;
+}
+
+@mixin nombrepizza{
+    color: black;
+    font-weight:1000;
+    font-size: 2rem;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family:'Nunito', sans-serif;
-    font-size: 20px;
 }
 
 body{
     background-color: #fff59d;
-    position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
 }
 
 /* inicio header*/
@@ -105,28 +120,20 @@ body{
 
     .logo{
         cursor: pointer;
-
         img{
             height:70px;
             width: auto;
             transition: all 0.3s;
-
             img:hover{
                 transform: scale(1.2);
             }
         }
-
     }
-
 }
 
 /*portada*/
 
-
 section{
-    min-height: 100vh;
-    max-width: 100vw;
-    overflow: hidden;
     background-color: rgb(249,248,577);
     display: flex;
     justify-content: center;
@@ -135,7 +142,7 @@ section{
 }
 
 .container-portada{
-    /*height:100vh; */
+    height:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,14 +153,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
-    span{
-        @include color1;
-        font-weight: 600;
-        padding: 30PX;
-    }
-    
+    flex-direction: row;
 
     p{
         @include color1;
@@ -162,19 +162,22 @@ section{
     }
 
     h1{
-        font-size: 2rem;
-        color: #da2a0b;
-        padding: 10px;
-        font-weight: BOLD;
+       @include titulopag;
         display: flex;
     }
     
 }
 
+span{
+    @include color1;
+    font-weight: 800;
+    padding: 15px;
+}
+
 /*articulos*/
 
 .row{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -197,17 +200,18 @@ section{
         padding: 5px 20px;
 
         p{
-            color: crimson;
-            font-weight: 800;
-            font-size: 0.8rem;
+            @include preciopizza;
         }
-    
+        
+        h2{
+            @include nombrepizza;
+        }
     }
 
-    titulo h2{
-        font-size: 1.5 rem;
-        font-weight: 600;
-        
+    .ingredientes{
+            p{
+                padding:10px 15px 5px;
+            }
     }
 
     .column:hover{
@@ -248,7 +252,7 @@ button{
 
 footer{
     bottom:0;
-    position: fixed;
+    position: relative;
     width:100%;
     left: 0;
 
@@ -295,170 +299,21 @@ footer{
 
 }
 
- /*formulario*/
 
- .container-form{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat (2,1fr);
-    grid-gap: 50px;
-
-    .btn-enviar{
-        padding: 15px;
-        font-size: 16px;
-        border: none;
-        outline: 0px;
-        background: lightgreen;
-        color: white;
-        border-radius:3px;
-        transition: all 300ms ease ;
-    }
-
-    .btn-enviar:hover{
-        background-color: #ffbc0e;
-    }
+/*Nuevo formulario de contacto (del proyecto anterior)*/
 
 
-    info{
-        width: 100%;
-        padding: 15px 10px;
-        font-size: 15px;
-        border: 1px;
-        margin-bottom: 20px;
-        border-radius: 3px;
-        outline: 0px;
-
-        .campo{
-            width: 100%;
-            padding: 15px 10px;
-            font-size: 15px;
-            border: 1px;
-            margin-bottom: 20px;
-            border-radius: 3px;
-            outline: 0px;
-        } 
-
-        textarea{
-            width: 100%;
-            padding: 15px 10px;
-            font-size: 15px;
-            border: 1px;
-            margin-bottom: 20px;
-            border-radius: 3px;
-            outline: 0px;
-        }
-    } 
-
-    info {
-        max-width: 530px;
-        min-width: 530px;
-        min-height: 140px;
-        max-height: 150px;
-
-        textarea{
-            max-width: 530px;
-            min-width: 530px;
-            min-height: 140px;
-            max-height: 150px;
-        }
-    }
-    
-    h2{
-        margin-bottom: 15px;
-        font-size: 35px;
-    }
-
-    p{
-        font-size: 17px;
-        line-height: 1.6;
-    }
-
-    a{
-        font-size: 17px;
-        display: inline-block;
-        text-decoration: none;
-        width: 100%;
-        color: grey;
-        font-weight: 700;
-
-        i{
-            color: grey;
-            margin-right: 10px;
-    
-        }
-
-    }
+/*formulario 3.0*/
 
 
-}
-
-/*pagina promociones*/ 
-section {
-    h4{
-        @include titulopag;
-    }
-        }
-        .ubicacion-box-promociones{
-
-            h2{
-                text-align: center;
-            }
-            .h2{
-                font-weight: bold;
-            }
-            
-            }
-        .container-promo{
-            width:100%;
-            background-color: whitesmoke;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            padding: 10px;
-        
-            .contenido-promo-cards{
-                display: flex;
-                justify-content:center;
-                align-items:center;
-                text-align: center;
-              
-                .card{
-                    margin:10px 10px;
-                    box-shadow: 0px 2px 8px 0px rgba(0,0,0,2);    
-                    p{
-                        font-size:12px;
-                        line-height: 1.5px;
-                        padding:0px 10px;
-                        margin-bottom:20px;
-                        color:#0E2954;
-                      }
-            
-                    h3{
-                        margin: 15px 0px;
-                        font-size:24px;
-                        color: grey;
-                      }
-            
-                    img{ 
-                        width:100%;
-                        height: 300px;
-                    
-                    }
-            
-                  }
-            }
-        
-        }
-    
-
- 
 
 
- 
 
 
-  
+
+
+
+
 /*empresa*/
 
 
@@ -556,10 +411,67 @@ section {
     }
 }
 
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
 
-    /*media queries*/
+    .tituloform{
+        @include tituloform;
+    }
 
-    @media (max-width:1024px){
+    .form_contenedor{
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    label{
+        color:#283629;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .form_texto{
+        padding:  20px 35px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        background-color: #edffed;
+        border: 2px solid #f0faf1;
+        color:#283629;
+        outline: none;
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .btnformcontacto{
+        font-size: 16px;
+        color:#ffffff;
+        border: 0;
+        border-radius: 25px;
+        background-color: lightgreen;
+        box-shadow: 0 0 20px rgba(25,254,0,0.4);
+        cursor: pointer;
+
+        &:hover{
+            background-color: green;
+        }
+    }
+}
+
+
+
+
+
+
+/*media queries*/
+
+@media (max-width:1024px){
         .row{
             width: 70%;
         }
@@ -578,7 +490,19 @@ section {
     }
 
 @media(max-width: 768px) {
-  
+
+        form {
+            padding: 50px 30px;
+            width: 50%;
+
+            .form_texto{
+                padding: 10px;
+            }
+        }
+
+
+
+
         .footer{
             display: flex;
             flex-direction: column;
@@ -604,8 +528,9 @@ section {
       
       }
       
-      @media (max-width:475px) 
-      {
+@media (max-width:475px) {
+
+      
         .contenido-promo-cards{
             display: flex;
             flex-direction: column;
@@ -633,8 +558,9 @@ section {
         }
       
 
-    @media screen and (max-width: 350px){
- 
+@media (max-width: 350px){
+
+
     .container-info-portada h1{
         font-size: 30px;
         font-weight: 2500;
