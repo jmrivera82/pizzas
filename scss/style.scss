@@ -13,6 +13,13 @@
     padding: 20px;
 }
 
+@mixin titulopagproductos{
+    font-size: 35px;
+    color: crimson;
+    text-align: center;
+    padding-top:0px;
+    padding: 20px;
+}
 
 @mixin cardtitulo{
     font-size: 30px;
@@ -305,6 +312,58 @@ footer{
 
 /*formulario 3.0*/
 
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+
+    .tituloform{
+        @include tituloform;
+    }
+
+    .form_contenedor{
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    label{
+        color:#283629;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .form_texto{
+        padding:  20px 35px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        background-color: #edffed;
+        border: 2px solid #f0faf1;
+        color:#283629;
+        outline: none;
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .btnformcontacto{
+        font-size: 16px;
+        color:#ffffff;
+        border: 0;
+        border-radius: 25px;
+        background-color: lightgreen;
+        box-shadow: 0 0 20px rgba(25,254,0,0.4);
+        cursor: pointer;
+
+        &:hover{
+            background-color: green;
+        }
+    }
+}
 
 
 
@@ -411,59 +470,22 @@ section {
     }
 }
 
-form{
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgb(0,0,0,0.2);
-    border-radius: 20px;
-    text-align: center;
-    width: 500px;
+/*productos*/
 
-    .tituloform{
-        @include tituloform;
-    }
-
-    .form_contenedor{
-        display:flex;
-        flex-direction: column;
-        text-align: left;
-    }
-
-    label{
-        color:#283629;
-        font-size: 15px;
-        font-weight: 600;
-        margin-bottom: 15px;
-    }
-
-    .form_texto{
-        padding:  20px 35px;
-        border-radius: 25px;
-        margin-bottom: 20px;
-        background-color: #edffed;
-        border: 2px solid #f0faf1;
-        color:#283629;
-        outline: none;
-        display: flex;
-        margin-bottom: 30px;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    .btnformcontacto{
-        font-size: 16px;
-        color:#ffffff;
-        border: 0;
-        border-radius: 25px;
-        background-color: lightgreen;
-        box-shadow: 0 0 20px rgba(25,254,0,0.4);
-        cursor: pointer;
-
-        &:hover{
-            background-color: green;
-        }
-    }
+.titulo-productos{
+    @include titulopagproductos;
 }
 
+.grid-productos{
+    display: grid;
+    grid-template-columns: 200px 400px 100px;
+    grid-template-rows: 100px;
+
+    b{
+        @include preciopizza;
+    }
+
+}
 
 
 

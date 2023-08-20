@@ -219,6 +219,56 @@ footer {
 
 /*Nuevo formulario de contacto (del proyecto anterior)*/
 /*formulario 3.0*/
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+}
+form .tituloform {
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  padding: 10px;
+}
+form .form_contenedor {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+form label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+form .form_texto {
+  padding: 20px 35px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #edffed;
+  border: 2px solid #f0faf1;
+  color: #283629;
+  outline: none;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  text-align: center;
+}
+form .btnformcontacto {
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: lightgreen;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+form .btnformcontacto:hover {
+  background-color: green;
+}
+
 /*empresa*/
 .ubicacion {
   width: 100%;
@@ -307,54 +357,24 @@ section h4 {
   border-radius: 8px;
 }
 
-form {
-  padding: 50px 55px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+/*productos*/
+.titulo-productos {
+  font-size: 35px;
+  color: crimson;
   text-align: center;
-  width: 500px;
+  padding-top: 0px;
+  padding: 20px;
 }
-form .tituloform {
-  font-size: 20px;
-  color: red;
-  text-align: center;
-  padding: 10px;
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: 200px 400px 100px;
+  grid-template-rows: 100px;
 }
-form .form_contenedor {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-form label {
-  color: #283629;
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-form .form_texto {
-  padding: 20px 35px;
-  border-radius: 25px;
-  margin-bottom: 20px;
-  background-color: #edffed;
-  border: 2px solid #f0faf1;
-  color: #283629;
-  outline: none;
-  display: flex;
-  margin-bottom: 30px;
-  justify-content: space-between;
-  text-align: center;
-}
-form .btnformcontacto {
-  font-size: 16px;
-  color: #ffffff;
-  border: 0;
-  border-radius: 25px;
-  background-color: lightgreen;
-  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-  cursor: pointer;
-}
-form .btnformcontacto:hover {
-  background-color: green;
+.grid-productos b {
+  color: crimson;
+  font-weight: 1000;
+  font-size: 2rem;
 }
 
 /*media queries*/
