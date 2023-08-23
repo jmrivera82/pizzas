@@ -20,7 +20,7 @@ body {
   padding: 5px 10%;
 }
 .header .btn button {
-  font-weight: 700;
+  font-size: 20px;
   color: #1b3039;
   padding: 9px 25px;
   background: #eceff1;
@@ -38,7 +38,7 @@ body {
   list-style: none;
 }
 .header .nav-links a {
-  font-size: 700;
+  font-size: 20px;
   color: grey;
   text-decoration: none;
 }
@@ -217,7 +217,6 @@ footer {
   color: #ffbc0e;
 }
 
-/*Nuevo formulario de contacto (del proyecto anterior)*/
 /*formulario 3.0*/
 form {
   padding: 50px 55px;
@@ -276,6 +275,25 @@ form .btnformcontacto:hover {
   display: grid;
   grid-template-columns: repeat 2, 1fr;
   grid-gap: 50px;
+}
+.ubicacion h3 {
+  font-size: 55px;
+  color: crimson;
+  text-align: center;
+  padding-top: 0px;
+  padding: 20px;
+}
+.ubicacion p {
+  font-size: 55px;
+  color: crimson;
+  text-align: center;
+  padding-top: 0px;
+  padding: 20px;
+}
+.ubicacion .mapa {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .ubicacion-box p {
@@ -375,6 +393,9 @@ section h4 {
   color: crimson;
   font-weight: 1000;
   font-size: 2rem;
+}
+.grid-productos p {
+  text-align: left;
 }
 
 /*media queries*/
