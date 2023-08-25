@@ -584,6 +584,32 @@ section {
 
 @media(max-width: 768px) {
 
+    .container-portada{
+        display: flex;
+        flex-direction: column;
+        .container-info-portada{
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 24px;
+            }
+            p{
+                font-size: 22px;
+            }
+        }
+        .segundo-titulo{        
+           span{
+            font-size: 20px;
+       }
+        }
+    }
+
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+
     .grid-productos{
         display: grid;
         grid-template-rows: 150px 180px 50px;
@@ -634,6 +660,26 @@ section {
       
 @media (max-width:475px) {
 
+    .container-portada{
+        display: flex;
+        flex-direction: column;
+        .container-info-portada{
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .segundo-titulo{        
+           span{
+            font-size: 16px;
+       }
+        }
+    }
+
         .contenido-promo-cards{
             display: flex;
             flex-direction: column;
@@ -666,6 +712,11 @@ section {
       
 
 @media (max-width: 350px){
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     .container-info-portada h1{
