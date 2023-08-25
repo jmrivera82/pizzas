@@ -226,8 +226,8 @@ form {
   width: 500px;
 }
 form .tituloform {
-  font-size: 20px;
-  color: red;
+  font-size: 25px;
+  color: crimson;
   text-align: center;
   padding: 10px;
 }
@@ -309,6 +309,56 @@ form .btnformcontacto:hover {
 }
 
 /*productos*/
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrap .wrap-titulo {
+  font-size: 25px;
+  color: crimson;
+  text-align: center;
+  padding: 10px;
+}
+.wrap .wrap.column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.wrap .wrap.column-2 .plato-carta {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+.wrap .wrap.column-2 .plato-carta .img-plato-carta {
+  display: flex;
+  justify-content: center;
+}
+.wrap .wrap.column-2 .plato-carta .img-plato-carta .img {
+  max-width: 50px;
+  max-height: 45px;
+}
+.wrap .wrap.column-2 .plato-carta .img-plato-carta .title-plato-carta h4 {
+  font-size: 55px;
+  color: crimson;
+  text-align: center;
+  padding-top: 0px;
+  padding: 20px;
+}
+.wrap .wrap.column-2 .plato-carta .img-plato-carta .title-plato-carta p {
+  font-size: 22px;
+  color: grey;
+  text-align: center;
+  padding: 10px;
+}
+.wrap .wrap.column-2 .plato-carta .img-plato-carta .precio-plato-carta {
+  display: flex;
+  flex-basis: 15%;
+  justify-content: center;
+  font-weight: bold;
+}
+
 .titulo-productos {
   font-size: 35px;
   color: crimson;
@@ -333,7 +383,7 @@ form .btnformcontacto:hover {
 
 /* promociones */
 section h4 {
-  font-size: 55px;
+  font-size: 35px;
   color: crimson;
   text-align: center;
   padding-top: 0px;
@@ -398,6 +448,21 @@ section h4 {
 
 /*media queries*/
 @media (max-width: 1024px) {
+  .grid-productos {
+    display: grid;
+    grid-template-rows: 100px 180px 50px;
+    font-size: 10px;
+    grid-template-rows: 30px;
+  }
+  .grid-productos h3 {
+    font-size: 14px;
+  }
+  .grid-productos p {
+    font-size: 12px;
+  }
+  .grid-productos b {
+    font-size: 10px;
+  }
   .row {
     width: 70%;
   }
@@ -416,6 +481,15 @@ section h4 {
   }
 }
 @media (max-width: 768px) {
+  .grid-productos {
+    display: grid;
+    grid-template-rows: 150px 180px 50px;
+    font-size: 14px;
+    grid-template-rows: 30px;
+  }
+  .grid-productos p {
+    font-size: 12px;
+  }
   form {
     padding: 50px 30px;
     width: 50%;
