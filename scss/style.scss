@@ -404,10 +404,12 @@ form{
     margin: 0 auto;
 
     .wrap-titulo{
-        @include tituloform()
-    }
+        h2{
+            @include tituloform()
+            }
+        }
 
-    .wrap.column-2{
+    .wrap-2column{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         column-gap: 1rem;
@@ -424,9 +426,10 @@ form{
                 justify-content: center;
 
                 .img{
-                    max-width: 50px;
-                    max-height: 45px;
+                    align-items: center;
+                    size: 30px;
                   }
+                }     
 
                   .title-plato-carta{
 
@@ -440,7 +443,6 @@ form{
                   
                   .precio-plato-carta{
                     display: flex;
-                    flex-basis: 15%;
                     justify-content: center;
                     font-weight: bold;
                   }
