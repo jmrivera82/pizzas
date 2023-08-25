@@ -313,8 +313,11 @@ form{
     padding: 50px 55px;
     box-shadow: 0 0 20px rgb(0,0,0,0.2);
     border-radius: 20px;
+    border: 1px solid lightgreen;
     text-align: center;
-    width: 500px;
+    width:50%;
+    display:block;
+    margin: 0 auto;
 
     .tituloform{
         @include tituloform;
@@ -624,7 +627,6 @@ section {
         form {
             padding: 50px 30px;
             width: 50%;
-
             .form_texto{
                 padding: 10px;
             }
@@ -707,6 +709,10 @@ section {
         .wrap-4columnas{
                 grid-template-columns: repeat(1, 1fr);
         }
+
+    .tituloform{
+        width:75%;
+    }    
         
         }
       
